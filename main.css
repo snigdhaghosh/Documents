@@ -1,0 +1,27 @@
+.header {
+    text-align: center;
+    background-color:coral;
+    font-family: 'Courier New', Courier, monospace;
+    /* color:yellowgreen; */
+}
+
+/* .links{
+    color: blueviolet;
+} */
+
+.navbar{
+    background-color:grey;
+}
+
+.navbar a{
+    display: inline-block;
+    color: yellowgreen;
+    padding: 14px 20px;
+    text-align: justify;
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
