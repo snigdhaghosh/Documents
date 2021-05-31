@@ -4,7 +4,13 @@
     --black: #2e2c2c;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    /* margin: 0; */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:#1e1f20;
     color: aliceblue;
@@ -12,19 +18,23 @@ body{
 
 .header{
     /* text-align: center; */
-    background-image: url("images/background.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: black url("images/background.jpeg") no-repeat top center;
+    /* background-repeat: no-repeat;
+    background-position: center; */
     background-size: cover;
     position: relative;
     /* overflow: hidden; */
     min-height:800px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* -webkit-background-size: cover !important; */
     /* background-color: coral; */
-    color: whitesmoke;
+}
+
+.home{
+    box-sizing: border-box;
+    padding-top: 200px;
 }
 
 /* 
@@ -35,7 +45,33 @@ body{
 } */
 
 #name{
+    color:azure;
     text-align: center;
     font-size: 75px;
     text-shadow: 0px 1px 2px black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+/* a{
+    text-decoration: none;
+} */
+
+.header .nav-block .nav{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px 20px 20px;
+    /* font-weight: bold; */
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.header .nav-block .nav .nav-page a{
+    text-decoration: none;
+    color: aliceblue;
 }
