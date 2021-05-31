@@ -64,6 +64,7 @@ li{
     text-decoration: none;
 } */
 
+
 #header .nav-block .nav .nav-page{
     display: inline;
     /* padding: 10px 20px 20px 20px; */
@@ -73,16 +74,18 @@ li{
     z-index: 999; */
 }
 
+
 #header .nav-block .nav{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 10px;
     letter-spacing: 1.5px;
     text-shadow: 0px 1px 1px rgb(24, 51, 49);
     width: 100%;
     position: fixed;
     list-style: none;
+    background-color: rgba(0, 0, 0, 0.548);
     /* font-weight: bold; */
     /* font-family: 'Courier New', Courier, monospace; */
 }
@@ -91,4 +94,21 @@ li{
     text-decoration: none;
     color: rgb(232, 244, 255);
     padding-right: 50px;
+}
+
+#header .nav-block .nav .nav-page a:hover{
+  color: coral;
+}
+
+/* TODO: FIX THIS! -> jquery*/
+/* #header .nav-block .nav .nav-page.active a{
+    color:coral;
+} */
+
+@media screen and (max-width:600px){
+    .nav-block a:not(:first-child) {display: none;}
+    .nav-block a.icon {
+      float: right;
+      display: block;
+    }
 }
