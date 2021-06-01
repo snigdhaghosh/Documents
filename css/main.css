@@ -18,7 +18,7 @@ body{
 
 #header{
     /* text-align: center; */
-    background: black url("../images/background.jpeg") no-repeat top center;
+    background: black url("../images/baxkground.jpeg") no-repeat top center;
     /* background-repeat: no-repeat;
     background-position: center; */
     background-size: cover;
@@ -105,10 +105,16 @@ li{
     color:coral;
 } */
 
-@media screen and (max-width:600px){
+@media screen and (max-device-width: 1600px) {
+    #header #home{
+        font-size: 56px; /* Normally 70px */
+    }
+}
+
+/* @media screen and (max-width:600px){
     .nav-block a:not(:first-child) {display: none;}
-    .nav-block a.icon {
+    .nav-block a.icon{
       float: right;
       display: block;
     }
-}
+} */
