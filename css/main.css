@@ -18,7 +18,7 @@ body{
 
 #header{
     /* text-align: center; */
-    background: black url("images/background.jpeg") no-repeat top center;
+    background: black url("../images/background.jpeg") no-repeat top center;
     /* background-repeat: no-repeat;
     background-position: center; */
     background-size: cover;
