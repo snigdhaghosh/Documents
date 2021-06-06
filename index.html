@@ -4,44 +4,101 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Website</title>
-        <link rel="stylesheet" href="css/main.css" !important>
+        <link rel="stylesheet" href="css/style.css" !important>
+        <link rel="stylesheet" href="css/all.css" !important>
     </head>
     <body>
-        <header id="header">
-            <nav class="nav-block">
-                <ul class="nav">
-                    <li class="nav-page"><a class="smoothscroll" href="#home">HOME</a></li>
-                    <li class="nav-page"><a class="smoothscroll" href="#about">ABOUT</a></li>
-                    <li class="nav-page"><a class="smoothscroll" href="#projects">PROJECTS</a></li>
-                    <li class="nav-page"><a class="smoothscroll" href="#resume">RESUME</a></li>
-                    <li class="nav-page"><a class="smoothscroll" href="#contact">CONNECT</a></li>
-                </ul>
-            </nav>
-            <div id="home">
-                <h1 id="name">Snigdha Ghosh Dastidar</h1>
-                <!-- links: -->
+        <header class="header">
+            <div class="header-navBlock">
+                <nav class="header-nav">
+                    <ul>
+                        <li class="current"><a class="smoothscroll" href="#home">HOME</a></li>
+                        <li><a class="smoothscroll" href="#about">ABOUT</a></li>
+                        <!-- <li><a class="smoothscroll" href="#resume">RESUME</a></li> -->
+                        <li><a target="_blank" href="images/Snigdha_Ghosh_Resume.pdf">RESUME</a></li>
+                        <li><a class="smoothscroll" href="#project">PROJECTS</a></li>
+                        <li><a class="smoothscroll" href="#contact">CONNECT</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <!-- <div class="social">
-            <a target="_blank" href="mailto:sdasti2@uic.edu"><i class="far fa-envolope"></i></a>
-        </div> -->
+        <section id="home" class="home web-section">
+            <div class="home__bg rellax" data-rellax-speed="-7"></div>
+            <div class="home-content">
+                <h1 id="home-name">Snigdha Ghosh Dastidar</h1>
+                 <!-- social links: -->
+                <div class="home-social">
+                    <a target="_blank" href="mailto:sdasti2@uic.edu"><i class="far fa-envelope"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/snigdhaghoshdastidar/"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/snigdhaghosh"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/snigdhaghosh_/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <section id="about">
-            <p>HAHAHAHA MY MY</p>
-            <p>WOAHHHHHHHH</p>
+        <section id="about" class="about web-section">
+            <!-- if include picture? -->
+            <!-- <div> -->
+            <!-- <div class="about-pic">
+                <img id="pic" src="images/myPic.jpg" alt="">
+            </div> -->
+            <div class="about-content">
+                <h3>About Me!</h3>
+                <!-- TODO: use span/div -> id -> different colors -->
+                <p> <br><br>>Where am I from?<br> India but born and raised in Oman.
+                    <br><br>>Education<br> University of Illinois at Chicago
+                    <br><br>>Major<br> Computer Science, minoring in Mathematics.
+                    <br><br>>Expected Graduation<br> May 2023.
+                    <br><br>>Interests<br> eating, sleeping.
+                    <br> HAHAHHAHAHAHA
+                    <br> WOAHHHH
+                </p>
+            </div>
+            <!-- </div> -->
         </section>
-        <section id="projects">
-            <p>Projects lol</p>
-        </section>
-        <section id="resume">
+
+        <!-- <section id="resume" class="resume web-section">
             <p> RESUME SHOW ANOTHER PAGE </p>
-        </section>
-        <section id="contact">
-            <p> CONTACT INFO?</p>
+        </section> -->
+
+        <section id="project" class="project web-section">
+            <h1>Projects lol</h1>
         </section>
 
-        <script src="/js/website.js"></script>
+        <section id="contact" class="contact web-section">
+            <h1>Say Hi!</h1>
+            <span class=contact-content>
+                <div>
+                    <p id="contact-info".>
+                        Email
+                        <br>sdasti2@uic.edu  
+                        <a target="_blank" href="mailto:sdasti2@uic.edu"><i class="far fa-paper-plane"></i></a>
+                    </p>
+                </div>
+                <!-- <span style="padding-left: 5rem;"> -->
+                <div>
+                    <p id="contact-info">
+                        Connect on Linkedin<br>
+                        <a target="_blank" href="https://www.linkedin.com/in/snigdhaghoshdastidar/"><i class="fab fa-linkedin-in"></i></a>
+                    </p>
+                </div>
+                <div>
+                    <p id="contact-info">LMAOOO<br>
+                        <a target="_blank" href="https://www.instagram.com/snigdhaghosh_/"><i class="fab fa-instagram-square"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/snigdhaghoshdastidar/"> <i class="fab fa-facebook-square"></i></a>
+                    </p>
+                </div>
+            </span>
+        </section>
+
+        <footer>
+            &copy; 2021 Snigdha Ghosh Dastidar.
+        </footer>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
         <noscript>You need to enable JavaScript to view the full site.</noscript>
     </body>
 
