@@ -1,5 +1,7 @@
 :root{
-    --section-space: 5rem;
+    --section-space: 6rem;
+    --header-font-size: 1.3rem;
+    --content-font-size:1.15rem;
 
     --white:aliceblue;
     --background_black:  rgba(0, 0, 0, 0.548);
@@ -30,7 +32,7 @@ body{
     /* top: .8rem; */
     left: 0;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.74);
 
     /* text-align: center;
     background: black url("../images/baxkground.jpeg") no-repeat top center;
@@ -297,15 +299,17 @@ body{
 }
 
 .about-content h3{
-    color: seashell;
-    font-size: 1.67rem;
-    margin-top: 0;
-    padding-left: 10rem;
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-weight: lighter;
+    color:rgb(168,229,230,71%);
+    padding-bottom: 1.25rem;
     letter-spacing: 0.1rem;
 }
 
 .about-content p{
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
+    text-align: center;
 }
 
 
@@ -326,10 +330,44 @@ body{
 
 
 .project{
-    padding: var(--section-space) 10rem;
+    padding:var(--section-space) 5rem;
     background-color: rgb(227, 231, 231);
     color: #0e0f0f;
 }
+
+.project h1{
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-weight: lighter;
+    color:rgb(30, 34, 34);
+    padding-bottom: 1.25rem;
+    letter-spacing: 0.1rem;
+}
+
+.project h2{
+    text-align: center;
+    font-size: var(--content-font-size);
+    font-weight: lighter;
+    color:rgb(60, 75, 75);
+    padding-bottom: 3.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.project-list{
+    max-width: 1180px;
+    margin-top: 2rem;
+    display:-webkit-inline-box;
+}
+
+.project-item__thumb img{
+    max-width: 15rem;
+    max-height: 15rem;
+    min-height: 15rem;
+    min-width: 15rem;
+    padding-right:1rem;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -345,22 +383,42 @@ body{
     background-color: #606a6b;
     color: rgba(223, 243, 247, 0.938);
 }
+.contact h3{
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-weight: lighter;
+    color:rgb(168,229,230,71%);
+    padding-bottom: 1.25rem;
+}
 
 .contact h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* padding-left: 15rem; */
-    color:rgb(38, 41, 41);
+    color:rgb(16, 17, 17);
 }
 
 #contact-info{
     text-align: center;
+    font-size: 1.15rem;
+    letter-spacing: 0.025rem;
+    padding: 2rem;
+}
+
+#word-link{
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: rgb(41,41,41);
+}
+
+#word-link:hover{
+    color:rgb(91,202,204);
 }
 
 .contact-content{
     padding-top: 4.5rem;
-    /* text-align: center; */
-    display: flex;
+    text-align: center;
+    display: -webkit-box;
     /* display: -ms-inline-flexbox;
     display: -webkit-inline-box;
     display: inline-flex;
@@ -373,13 +431,12 @@ body{
 
 .contact-content a{
     /* text-align: center; */
-    font-size: 1.7rem;
-    color:aquamarine;
+    font-size: 2.3rem;
+    color: rgb(41,41,41);
 }
 
 .contact-content a:hover{
-    font-size: 1.7rem;
-    color:coral;
+    color:rgb(91,202,204);
 }
 
 
