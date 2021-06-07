@@ -353,10 +353,12 @@ body{
     letter-spacing: 0.1rem;
 }
 
-.project-list{
+#project-row{
     max-width: 1180px;
     margin-top: 2rem;
-    display:-webkit-inline-box;
+    position: relative;
+    display:-webkit-inline-flex;
+    overflow: hidden;
 }
 
 .project-item__thumb img{
