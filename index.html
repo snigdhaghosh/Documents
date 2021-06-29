@@ -12,12 +12,12 @@
             <div class="header-navBlock">
                 <nav class="header-nav">
                     <ul>
-                        <li class="current"><a class="smoothscroll" href="#home">HOME</a></li>
-                        <li><a class="smoothscroll" href="#about">ABOUT</a></li>
+                        <li class="nav"><a class="smoothscroll active" href="#home">HOME</a></li>
+                        <li class="nav"><a class="smoothscroll " href="#about">ABOUT</a></li>
                         <!-- <li><a class="smoothscroll" href="#resume">RESUME</a></li> -->
                         <li><a target="_blank" href="images/Snigdha_Ghosh_Resume.pdf">RESUME</a></li>
-                        <li><a class="smoothscroll" href="#project">PROJECTS</a></li>
-                        <li><a class="smoothscroll" href="#contact">CONNECT</a></li>
+                        <li class="nav"><a class="smoothscroll " href="#project">PROJECTS</a></li>
+                        <li class="nav"><a class="smoothscroll " href="#contact">CONNECT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,7 +31,7 @@
                 <div class="home-social">
                     <a target="_blank" href="mailto:sdasti2@uic.edu"><i class="far fa-envelope"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/snigdhaghoshdastidar/"><i class="fab fa-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/snigdhaghosh"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/snigdhaghosh?tab=repositories"><i class="fab fa-github"></i></a>
                     <a target="_blank" href="https://www.instagram.com/snigdhaghosh_/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -43,19 +43,46 @@
             <!-- <div class="about-pic">
                 <img id="pic" src="images/myPic.jpg" alt="">
             </div> -->
+            <h3>ABOUT ME</h3>
             <div class="about-content">
-                <h3>ABOUT ME</h3>
                 <!-- TODO: use span/div -> id -> different colors -->
-                <p> <br><br>> Where am I from?<br> India but born and raised in Oman.
-                    <br><br>> Education<br> University of Illinois at Chicago
-                    <br><br>> Major<br> Computer Science, minoring in Mathematics.
-                    <br><br>> Expected Graduation<br> May 2023.
-                    <br><br>> Interests<br> eating, sleeping.
-                    <br> HAHAHHAHAHAHA
-                    <br> WOAHHHH
-                </p>
+                <ul id="about-me">
+                    <li id="about-part">                     
+                        <!-- TODO: ADD INTERESTS AND STUFFS -->
+                        <div id="about-info-para">
+                            <span>> Full name</span><br>
+                            <span id="ans">&nbsp&nbsp Snigdha Ghosh Dastidar</span><br><br>
+                            <span>> Nationality</span><br>
+                            <span id="ans">&nbsp&nbsp West Bengal, India</span><br><br>
+                            <span>> Birthplace</span><br>
+                            <span id="ans">&nbsp&nbsp Muscat, Oman [Dec 11, 2001]</span><br><br>
+                            <span>> Education</span><br>
+                            <span id="ans">&nbsp&nbsp Univerity of Illinois at Chicago</span><br><br>
+                            <span>> Major</span><br>
+                            <span id="ans">&nbsp&nbsp Computer Science, Minor in Mathematics</span><br><br>
+                            <span>> Expected Graduation</span><br>
+                            <span id="ans">&nbsp&nbsp May 2023</span><br><br>
+                            <span>> Interests</span><br>
+                            <span id="ans">&nbsp&nbsp Eat and sleep RIP</span><br><br>
+                            <span>> Email</span><br>
+                            <span id="ans">&nbsp&nbsp sdasti2@uic.edu | snigdha.gdastidar@gmail.com</span><br><br>
+                        </div>
+                    </li>
+                    <li id="about-part">
+                        <p style="font-size: 1.23rem; letter-spacing: .13rem;">SKILLS</p>
+                            <ul class="skills-bars">
+                                <!-- TODO:  FIX THE SKILLS!!!!!!! -->
+                                <li><strong>JAVA</strong><div class="progress percent50"></div></li>
+                                <li><strong>C++ / C</strong><div class="progress percent75"></div></li>
+                                <li><strong>PYTHON</strong><div class="progress percent70"></div></li>
+                                <li><strong>JAVASCRIPT</strong><div class="progress percent25"></div></li>
+                                <li><strong>HTML | CSS</strong><div class="progress percent80"></div></li>
+                            </ul>
+                    </li>
+                </ul>
             </div>
             <!-- </div> -->
+            <!-- maybe a skill bar? -->
         </section>
 
         <!-- <section id="resume" class="resume web-section">
@@ -66,33 +93,157 @@
             <h1>PROJECTS LMAOO</h1>
             <h2>A few of my personal and coursework projects</h2>
             <div class="project-list">
-                <div id="project-row">
-                    <div class="project-item">
-                        <a class="project-item__thumb">
-                            <img src="images/c4.png" srcset="images/c4.png 1x, images/c4.png 2x" alt="">
+                <!-- TODO: Fix pictures, flex/ row -->
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb p1" target="_blank">
+                            <img src="images/server.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>WORD GUESS GAME</h3>
+                                    <p><br>Multi-threaded client/server program</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
-                    <div class="project-item">
-                        <a class="project-item__thumb">
-                            <img src="images/p3.png" srcset="images/p3.png 1x, images/p3.png 2x" alt="">
+                </div>
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb p1" target="_blank">
+                            <img src="images/puzzle.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>15-PUZZLE GAME</h3>
+                                    <p><br>JavaFX application rendering 15 Puzzle
+                                    implemented using Executors class for the two
+                                    heuristic buttons. Incoporated the provided
+                                    A* algorithm</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb p1" target="_blank" href="https://github.com/snigdhaghosh/OpenStreet-Maps">
+                            <img src= "images/openMap.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>OPENSTREET MAPS</h3>
+                                    <p><br>Console program finding the distance
+                                    between two points using Dijkstra's algorithm</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
+
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb" target="_blank">
+                            <img src="images/con4.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>CONNECT FOUR</h3>
+                                    <p><br>JavaFX game replicate connect four and
+                                    player could undo moves</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- //SHIT -->
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb" target="_blank">
+                            <img src="images/personal.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>PERSONAL WEBSITE</h3>
+                                    <p><br>Website developed by me.
+                                    UGHHHHHHHHHH</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-pic">
+                        <a class="project-item__thumb" target="_blank" href="https://github.com/snigdhaghosh/Web-Crawler">
+                            <img src="images/web.png" alt="">
+                            <div class="overlay">
+                                <div id="text">
+                                    <h3>WEB CRAWLER</h3>
+                                    <p><br>Console program to crawl the web and 
+                                    return a list of email addresses</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- WRONG STUFFS <div class="project-list">       
+                <div class="group group-old">
+                    <div class="rect"></div>
+                    <div class="rect"></div>
+                </div>
+                <div class="label label-old">Regular</div>
+                <div class="group group-new">
+                    <div class="rect"></div>
+                    <div class="rect"></div>
+                </div>
+                <div class="label label-new">Masked (with feComposite operator="atop")</div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="old-goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                        <filter id="fancy-goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div> -->
+
+            <!-- MAKE ANOTHER ROW OF PROJECTS????
+            <div class="project-list">
+            </div> -->
+                <!-- <div class="project-item">
+                    <a class="project-item__thumb">
+                        <img src="images/p3.png" alt="">
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a class="project-item__thumb">
+                        <img src="images/server.png" alt="">
+                    </a>
+                </div> -->
+            
         </section>
 
         <section id="contact" class="contact web-section">
             <h3>CONTACT</h3>
             <h1>Say Hello!</h1>
+            <p id="contact-location"> Currently Located in <br>
+                <span style="color:rgb(41,41,41);"><i class="fas fa-map-marker-alt"></i>
+                    Chicago, IL</span>
+            </p>
             <!-- <h3>Get In Touch</h3> -->
             <span class=contact-content>
                 <div>
                     <p id="contact-info">
                         <a target="_blank" href="mailto:sdasti2@uic.edu"><i class="far fa-paper-plane"></i></a>
                         <br><br>Email Me at
-                        <br><span style="color:rgb(41,41,41);">
-                            sdasti2@uic.edu
-                        </span>
+                        <br><span style="color:rgb(41,41,41);">sdasti2@uic.edu</span>
                     </p>
                 </div>
                 <!-- <span style="padding-left: 5rem;"> -->
@@ -114,7 +265,8 @@
         </section>
 
         <footer>
-            &copy; 2021 Snigdha Ghosh Dastidar.
+            &copy; 2021 Snigdha Ghosh Dastidar.  |  Design inspired from 
+            <a href="https://styleshout.com/">StyleShout</a>
         </footer>
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
