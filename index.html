@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="css/all.css" !important>
     </head>
     <body>
+        <!-- TODO: PRELOADER -->
+        <div class="preloader">
+
+        </div>
+
         <header class="header">
             <div class="header-navBlock">
                 <nav class="header-nav">
@@ -43,9 +48,8 @@
             <!-- <div class="about-pic">
                 <img id="pic" src="images/myPic.jpg" alt="">
             </div> -->
-            <h3>ABOUT ME</h3>
+            <h1>ABOUT ME</h1>
             <div class="about-content">
-                <!-- TODO: use span/div -> id -> different colors -->
                 <ul id="about-me">
                     <li id="about-part">                     
                         <!-- TODO: ADD INTERESTS AND STUFFS -->
@@ -90,10 +94,11 @@
         </section> -->
 
         <section id="project" class="project web-section">
-            <h1>PROJECTS LMAOO</h1>
+            <h1>PROJECTS<a target="_blank" href="https://github.com/snigdhaghosh?tab=repositories"><i class="fab fa-github"></i></a></h1>
             <h2>A few of my personal and coursework projects</h2>
+            <!-- Projects list in a row -->
             <div class="project-list">
-                <!-- TODO: Fix pictures, flex/ row -->
+                <!-- Project 1: Server/Client Project -->
                 <div class="project-item">
                     <div class="project-pic">
                         <a class="project-item__thumb p1" target="_blank">
@@ -101,12 +106,21 @@
                             <div class="overlay">
                                 <div id="text">
                                     <h3>WORD GUESS GAME</h3>
-                                    <p><br>Multi-threaded client/server program</p>
+                                    <p><br>Multi-threaded server/client program</p><br><br>
+                                    <div id="project-foot">
+                                        <div id="project-lang">Java</div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/WordGuess-Game">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
+                <!-- Project 2: 15-PUZZLE -->
                 <div class="project-item">
                     <div class="project-pic">
                         <a class="project-item__thumb p1" target="_blank">
@@ -118,21 +132,39 @@
                                     implemented using Executors class for the two
                                     heuristic buttons. Incoporated the provided
                                     A* algorithm</p>
+                                    <div id="project-foot">
+                                        <div id="project-lang">Java</div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
+                <!-- Projet 3: OpenStreet-Maps -->
                 <div class="project-item">
                     <div class="project-pic">
-                        <a class="project-item__thumb p1" target="_blank" href="https://github.com/snigdhaghosh/OpenStreet-Maps">
+                        <a class="project-item__thumb p1" target="_blank">
                             <img src= "images/openMap.png" alt="">
                             <div class="overlay">
                                 <div id="text">
                                     <h3>OPENSTREET MAPS</h3>
                                     <p><br>Console program finding the distance
                                     between two points using Dijkstra's algorithm</p>
+                                    <div id="project-foot">
+                                        <div id="project-lang">C++</div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- href="https://github.com/snigdhaghosh/OpenStreet-Maps" -->
                             </div>
                         </a>
                     </div>
@@ -140,6 +172,7 @@
             </div>
 
             <div class="project-list">
+                <!-- Project 4: Connect 4 -->
                 <div class="project-item">
                     <div class="project-pic">
                         <a class="project-item__thumb" target="_blank">
@@ -149,12 +182,20 @@
                                     <h3>CONNECT FOUR</h3>
                                     <p><br>JavaFX game replicate connect four and
                                     player could undo moves</p>
+                                    <div id="project-foot">
+                                        <div id="project-lang">Java</div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <!-- //SHIT -->
+                <!-- Project 5: Personal Website -->
                 <div class="project-item">
                     <div class="project-pic">
                         <a class="project-item__thumb" target="_blank">
@@ -164,28 +205,48 @@
                                     <h3>PERSONAL WEBSITE</h3>
                                     <p><br>Website developed by me.
                                     UGHHHHHHHHHH</p>
+                                    <div id="project-foot">
+                                        <div style="display: flex; padding: 0.1rem;">
+                                            <div id="project-lang">HTML</div>
+                                            <div id="project-lang">CSS</div>
+                                            <div id="project-lang">JS</div>
+                                        </div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
+                <!-- Project 6: Web Crawler -->
                 <div class="project-item">
                     <div class="project-pic">
-                        <a class="project-item__thumb" target="_blank" href="https://github.com/snigdhaghosh/Web-Crawler">
+                        <a class="project-item__thumb" target="_blank">
                             <img src="images/web.png" alt="">
                             <div class="overlay">
                                 <div id="text">
                                     <h3>WEB CRAWLER</h3>
                                     <p><br>Console program to crawl the web and 
                                     return a list of email addresses</p>
+                                    <div id="project-foot">
+                                        <div id="project-lang">Python</div>
+                                        <div>
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                                <i class="fas fa-code-branch"></i></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- href="https://github.com/snigdhaghosh/Web-Crawler" -->
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-
-
 
             <!-- WRONG STUFFS <div class="project-list">       
                 <div class="group group-old">
@@ -231,8 +292,8 @@
         </section>
 
         <section id="contact" class="contact web-section">
-            <h3>CONTACT</h3>
-            <h1>Say Hello!</h1>
+            <h1>CONTACT</h1>
+            <h3>Say Hello!</h3>
             <p id="contact-location"> Currently Located in <br>
                 <span style="color:rgb(41,41,41);"><i class="fas fa-map-marker-alt"></i>
                     Chicago, IL</span>

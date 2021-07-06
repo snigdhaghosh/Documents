@@ -310,7 +310,7 @@ body{
     color: whitesmoke;
 }
 
-#about h3{
+#about h1{
     text-align: center;
     /* font-size: var(--header-font-size); */
     font-size: 1.65rem;
@@ -592,6 +592,17 @@ body{
     letter-spacing: 0.1rem;
 }
 
+.project h1 a{
+    /* text-align: center; */
+    font-size: 2rem;
+    color: rgb(41,41,41);
+}
+
+.project h1 a:hover{
+    color:rgb(91,202,204);
+}
+
+
 .project h2{
     text-align: center;
     font-size: var(--content-font-size);
@@ -663,7 +674,7 @@ body{
 
 .project-item__thumb::after{
 /*     z-index: 1; */
-    content: "NAME";  /* sets content here */
+    /* content: "NAME";  sets content here */
     font-family:'Courier New', Courier, monospace;
     font-weight: 300;
     font-size: 2rem;
@@ -684,7 +695,7 @@ body{
     position: absolute;
     left: 35%;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.849);
 }
 
 .overlay{
@@ -701,7 +712,7 @@ body{
 }
 
 .project-pic:hover .overlay {
-    opacity: 0.8 ;
+    opacity: 0.85 ;
 }
   
 #text{
@@ -718,11 +729,12 @@ body{
 
 .overlay h3{
     /* padding: 1rem; */
+    font-size: 1.8rem;
     font-weight: normal;
 }
 
 .overlay p{
-    color: rgb(202, 228, 226);
+    color: rgb(202, 241, 238);
     bottom:auto;
     font-size: 16px;
     padding:1rem;
@@ -746,7 +758,32 @@ body{
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
-    
+
+#text #link-git{
+    font-size: 2rem;
+    color: rgba(241, 241, 241, 0.719);
+}
+
+#text #link-git:hover{
+    color: rgb(93, 228, 228);
+}
+
+#text #project-lang{
+    text-align:center;
+    font-size: 1rem;
+    border: 2.3px solid rgb(255, 255, 185);
+    /* height: 1rem; */
+    width:3rem;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0.2rem;
+    display: block;
+    /* background: rgb(211, 206, 206); */
+}
+
+#text #project-foot{
+    display: flex;
+}
 
 /* WRONG STUUFS .group{
     position:absolute;
@@ -830,7 +867,7 @@ body{
     background-color: #606a6b;
     color: rgba(223, 243, 247, 0.938);
 }
-.contact h3{
+.contact h1{
     letter-spacing: 0.1rem;
     text-align: center;
     font-size: var(--header-font-size);
@@ -839,7 +876,7 @@ body{
     padding-bottom: 1.25rem;
 }
 
-.contact h1{
+.contact h3{
     text-align: center;
     font-size: 2.5rem;
     /* padding-left: 15rem; */
