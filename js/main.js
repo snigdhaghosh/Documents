@@ -59,29 +59,8 @@ $(document).ready(function($) {
   //
   //
   //
-  // TODO: Supports responsive feature for the navigation bar
+  // TODO: #2 Supports responsive feature for the navigation bar
   // hamburger icon?
   
 
 });
-
-
-
-// CRAPPP BELOW
-// FADE IN AND OUT DURING SCROLLING 
-//
-//
-// if (currScroll > prevScroll) {  // Down Direction
-//   $(".header").fadeOut();
-// } else {                        // Up Direction
-//   $(".header").fadeIn();
-// }
-// prevScroll = currScroll;
-// if (currScroll == 0) {
-//   $(".header").css("position", "relative");
-//   $(".header").css("background-color", "#blue");
-// } else {
-//   $(".header").css("position", "fixed");
-//   $(".header").css("background-color", "black");
-// }
-

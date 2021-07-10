@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="css/all.css" !important>
     </head>
     <body>
-        <!-- TODO: PRELOADER -->
-        <div class="preloader">
-
+        <!-- TODO: #1 PRELOADER -->
+        <div id="preloader">
+            <div id="loader"></div>
         </div>
 
         <header class="header">
@@ -52,7 +52,7 @@
             <div class="about-content">
                 <ul id="about-me">
                     <li id="about-part">                     
-                        <!-- TODO: ADD INTERESTS AND STUFFS -->
+                        <!-- TODO: #4 ADD INTERESTS AND STUFFS -->
                         <div id="about-info-para">
                             <span>> Full name</span><br>
                             <span id="ans">&nbsp&nbsp Snigdha Ghosh Dastidar</span><br><br>
@@ -75,7 +75,7 @@
                     <li id="about-part">
                         <p style="font-size: 1.23rem; letter-spacing: .13rem;">SKILLS</p>
                             <ul class="skills-bars">
-                                <!-- TODO:  FIX THE SKILLS!!!!!!! -->
+                                <!-- TODO: #3  FIX THE SKILLS!!!!!!! -->
                                 <li><strong>JAVA</strong><div class="progress percent50"></div></li>
                                 <li><strong>C++ / C</strong><div class="progress percent75"></div></li>
                                 <li><strong>PYTHON</strong><div class="progress percent70"></div></li>
@@ -90,7 +90,6 @@
         </section>
 
         <!-- <section id="resume" class="resume web-section">
-            <p> RESUME SHOW ANOTHER PAGE </p>
         </section> -->
 
         <section id="project" class="project web-section">
@@ -158,13 +157,12 @@
                                     <div id="project-foot">
                                         <div id="project-lang">C++</div>
                                         <div>
-                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/OpenStreet-Maps">
                                                 <i class="fas fa-code-branch"></i></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- href="https://github.com/snigdhaghosh/OpenStreet-Maps" -->
                             </div>
                         </a>
                     </div>
@@ -212,7 +210,7 @@
                                             <div id="project-lang">JS</div>
                                         </div>
                                         <div>
-                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/snigdhaghosh.github.io">
                                                 <i class="fas fa-code-branch"></i></i>
                                             </a>
                                         </div>
@@ -235,59 +233,20 @@
                                     <div id="project-foot">
                                         <div id="project-lang">Python</div>
                                         <div>
-                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/">
+                                            <a id = "link-git" target="_blank" href="https://github.com/snigdhaghosh/Web-Crawler">
                                                 <i class="fas fa-code-branch"></i></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <!-- href="https://github.com/snigdhaghosh/Web-Crawler" -->
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <!-- WRONG STUFFS <div class="project-list">       
-                <div class="group group-old">
-                    <div class="rect"></div>
-                    <div class="rect"></div>
-                </div>
-                <div class="label label-old">Regular</div>
-                <div class="group group-new">
-                    <div class="rect"></div>
-                    <div class="rect"></div>
-                </div>
-                <div class="label label-new">Masked (with feComposite operator="atop")</div>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                    <defs>
-                        <filter id="old-goo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                            <feBlend in="SourceGraphic" in2="goo" />
-                        </filter>
-                        <filter id="fancy-goo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                        </filter>
-                    </defs>
-                </svg>
-            </div> -->
-
             <!-- MAKE ANOTHER ROW OF PROJECTS????
             <div class="project-list">
             </div> -->
-                <!-- <div class="project-item">
-                    <a class="project-item__thumb">
-                        <img src="images/p3.png" alt="">
-                    </a>
-                </div>
-                <div class="project-item">
-                    <a class="project-item__thumb">
-                        <img src="images/server.png" alt="">
-                    </a>
-                </div> -->
             
         </section>
 
@@ -332,6 +291,7 @@
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
         <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/preloader.js"></script>
         <script src="js/main.js"></script>
         <noscript>You need to enable JavaScript to view the full site.</noscript>
     </body>
